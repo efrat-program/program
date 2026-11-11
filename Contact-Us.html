@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Contact-Us.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title>צור-קשר</title>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="../indexs.html">ראשי</a></li>
+                <li><a href="../pages/odot.html">אודות</a></li>
+                <li><a href="../pages/project.html">פרויקטים</a></li>
+                <li><a href="../pages/Visualizations.Html">הדמיות</a></li>
+                <li><a href="../pages/Contact-Us.html" class="active">צור קשר</a></li>
+            </ul>
+        </nav>
+
+        <a href="../pages/indexs.html" class="logo-link">
+            <img src="../assets/images/logo.png" alt="לוגו אפרת כהן - עיצוב פנים" class="logo-image">
+        </a>
+    </div>
+</header>
+    <main class="contact-section" >
+        <form action="#" method="get" class="contact-form">
+            <fieldset>
+                <legend>התחלת פרויקט – תיאום פגישת הכרות וייעוץ</legend>
+
+                <div class="form-group">
+                    <label for="firstname">שם פרטי:</label>
+                    <input type="text" id="firstname" name="firstname" autocomplete="given-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">שם משפחה:</label>
+                    <input type="text" id="lastname" name="lastname" autocomplete="family-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">טלפון להתקשרות:</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">דואר אלקטרוני:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">עיר / יישוב הפרויקט:</label>
+                    <input type="text" id="city" name="city">
+                </div>
+
+                <div class="form-group">
+                    <label for="property-type">סוג הנכס:</label>
+                    <select id="property-type" name="property_type">
+                        <option value="" disabled selected>בחר/י אפשרות</option>
+                        <option value="apartment">דירת מגורים</option>
+                        <option value="private-house">בית פרטי / וילה</option>
+                        <option value="office">משרד / חלל מסחרי</option>
+                        <option value="renovation">שדרוג חלל בודד (מטבח/סלון וכו')</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">פרטים נוספים על הפרויקט:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="ספרו בקצרה על הנכס והצרכים שלכם..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">שליחת פנייה</button>
+            </fieldset>
+        </form>
+   
+
+
+ </main>
+
+   <footer>
+    <p>© כל הזכויות שמורות - אפרת כהן | סטודיו לתכנון ועיצוב פנים</p>
+    <div class="gold-footer"></div>
+    <div class="kishur">
+        <a href="../pages/odot.html">אודות החברה</a>
+        <span>|</span>
+        <a href="../pages/Contact-Us.html">צור קשר</a>
+    </div>
+    
+</footer>
+</body>
+</html>

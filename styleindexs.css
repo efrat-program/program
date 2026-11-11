@@ -1,0 +1,236 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;          /* רוחב מלא של המסך */
+  height: 500px;        /* ניתן לשנות את הגובה לפי הצורך (למשל 500px או 600px) */
+  margin: 0 auto;
+  overflow: hidden;     /* חותך את התמונות כשהן מתקרבות */
+  background-color: #000;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: scale(1);
+  animation-name: slowZoomFade;
+  animation-duration: 24s; /* 3 תמונות כפול 8 שניות */
+  animation-iteration-count: infinite;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* ממלא את המסגרת בשמירה על פרופורציות */
+}
+
+/* השהייה לכל תמונה בתורה */
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+.slide:nth-child(2) {
+  animation-delay: 8s;
+}
+.slide:nth-child(3) {
+  animation-delay: 16s;
+}
+
+/* אנימציית התקרבות איטית ונעימה */
+@keyframes slowZoomFade {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  8% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: scale(1.12); /* התקרבות עדינה */
+  }
+  41% {
+    opacity: 0;
+    transform: scale(1.15);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.gold-line {
+  width: 100%;         
+  height: 8px;        
+  background: linear-gradient(to right, #c5a059, #dfc17d, #c5a059); 
+  margin: 0 auto;
+}
+     .about-content h1 {
+            font-size: 32px;
+            color:#2c3e50 ;
+            margin-top: 10;
+            margin-bottom: 25px;
+            position: relative;
+        }
+          .about-content p {
+            font-size: 17px;
+            color:#666666 ;
+            margin-bottom: 18px;
+        }
+
+        .highlight-text {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+ section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+  gap: 40px;            
+  width: 100%;
+  max-width: 1400px;     
+  margin: 0 auto;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.video-side {
+  width: 50%;             
+  flex-shrink: 0;
+}
+
+.video-side video {
+  width: 100% ;
+  height: auto ;
+  display: block ;
+  border-radius: 8px ;
+  
+  
+}
+
+.text-side {
+  width: 45%;          
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.text-side p {
+  margin: 0 0 15px 0 ;
+  line-height: 1.6 ;
+}
+.project {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;           
+  gap: 20px;                   
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.pictures {
+
+  background-color: #ffffff; 
+  border:1px solid #f9ebeb;
+  border-radius: 8px; 
+   overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 23%;                
+  min-width: 250px;
+}
+
+
+.pictures:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px#c5a059 ;
+}
+
+ 
+.pictures img {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover;
+  display: block; 
+}
+ .pictures{
+    font-family:  'Segoe UI', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color:  #2c3e50;
+
+}
+h2{
+     font-family:  'Segoe UI', Arial, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color:  #2c3e50;
+}
+.gold-line2 {
+  width: 40%;         
+  height: 5px;      
+  background: linear-gradient(to right, #c5a059, #dfc17d, #c5a059); 
+  margin: 0 ;
+}
+
+
+ .my-button {
+    display: block;             
+    width: fit-content;          /* רוחב הכפתור מותאם בדיוק לטקסט שבתוכו */
+    margin: 20px auto 30px auto; /* ה-auto בצדדים ממרכז את הכפתור בדיוק באמצע אופקית */
+    background-color: #d5ae66;
+    color: #ffffff;
+    padding: 14px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.my-button:hover {
+    background-color: #cea65a;
+    transform: scale(1.05); /* מגדיל את הכפתור ב-5% בצורה חלקה */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* מוסיף צל עדין שיוצר תחושת תלת-מימד */
+}
+
+.my-button:active {
+    transform: scale(0.99);
+}
+
+
+
+.video-side {
+  width: 50%;             
+  flex-shrink: 0;
+}
+
+/* Media Query למסכים קטנים וטאבלטים */
+@media (max-width: 900px) {
+  section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text-side, .video-side {
+    width: 100%;
+  }
+}
